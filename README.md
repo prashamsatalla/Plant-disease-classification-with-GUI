@@ -56,7 +56,9 @@ The model was trained using ResNet50 for classification.
   ```bash
   python mk1.py
   ```
-   You can try widgets in the GUI with ease. 
+- You can try widgets in the GUI with ease.
+
+ <img align="left" src="./images/gui2.png" width="456" height="500"> <img align="right" src="./images/gui3.png" width="456" height="500">
    
 ### Custom GUI 
  If you want to deploy any classification models through this simple GUI, change the load_model path in mk1.py at line 8 and resize image in get_image function.
