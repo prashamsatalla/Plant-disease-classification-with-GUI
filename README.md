@@ -50,7 +50,7 @@ The model was trained using ResNet50 for classification.
 - Navigate to the Repo directory.
 - Run below command for required libraries.
   ```bash
-  . requirement.txt
+  . requirements.txt
   ```
 - Run following command for GUI:
   ```bash
