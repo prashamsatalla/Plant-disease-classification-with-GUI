@@ -116,7 +116,7 @@ class Ui_Dialog(object):
 
         image_path = images_list[idx]
         img = Image.open(image_path)
-        img = img.resize((160, 160), Image.ANTIALIAS)
+        img = img.resize((256,256), Image.ANTIALIAS)
         img  = image.img_to_array(img)
         img  = img.reshape((1,) + img.shape)
         predictions = new_model.predict(img)
@@ -126,7 +126,7 @@ class Ui_Dialog(object):
         print(predictions)
         self.result.setText(predictions)
         pixmap = QtGui.QPixmap(image_path)
-        scaled_pixmap = pixmap.scaled(64, 64, QtCore.Qt.KeepAspectRatio)
+        scaled_pixmap = pixmap.scaled(500,500, QtCore.Qt.KeepAspectRatio)
         self.showimage.setPixmap(scaled_pixmap)
 
     def nextimage(self):
@@ -138,7 +138,7 @@ class Ui_Dialog(object):
 
         image_path = images_list[idx]
         img = Image.open(image_path)
-        img = img.resize((160, 160), Image.ANTIALIAS)
+        img = img.resize((256,256), Image.ANTIALIAS)
         img  = image.img_to_array(img)
         img  = img.reshape((1,) + img.shape)
         predictions = new_model.predict(img)
@@ -148,7 +148,7 @@ class Ui_Dialog(object):
         print(predictions)
         self.result.setText(predictions)
         pixmap = QtGui.QPixmap(image_path)
-        scaled_pixmap = pixmap.scaled(64, 64, QtCore.Qt.KeepAspectRatio)
+        scaled_pixmap = pixmap.scaled(500,500, QtCore.Qt.KeepAspectRatio)
         self.showimage.setPixmap(scaled_pixmap)
 
     def previousimage(self):
@@ -159,7 +159,7 @@ class Ui_Dialog(object):
             idx = 0
         image_path = images_list[idx]
         img = Image.open(image_path)
-        img = img.resize((160, 160), Image.ANTIALIAS)
+        img = img.resize((256,256), Image.ANTIALIAS)
         img  = image.img_to_array(img)
         img  = img.reshape((1,) + img.shape)
         predictions = new_model.predict(img)
@@ -169,7 +169,7 @@ class Ui_Dialog(object):
         print(predictions)
         self.result.setText(predictions)
         pixmap = QtGui.QPixmap(image_path)
-        scaled_pixmap = pixmap.scaled(64, 64, QtCore.Qt.KeepAspectRatio)
+        scaled_pixmap = pixmap.scaled(500,500, QtCore.Qt.KeepAspectRatio)
         self.showimage.setPixmap(scaled_pixmap)
 
     def closeEvent(self, event):
