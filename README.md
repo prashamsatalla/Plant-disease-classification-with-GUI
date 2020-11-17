@@ -9,7 +9,7 @@ The model was trained using ResNet50 for classification.
 - validation accuracy: 93.18 %
 
 ##### Results:
-  <img src="./images/results.png" width="796" height="756">
+  <img src="./images/results.png" width="600" height="550">
 
 
 ### Types of Plants and Diseases - The model classifies:
@@ -42,7 +42,7 @@ The model was trained using ResNet50 for classification.
 27. Grape leaf
 28. Grape leaf black rot
 
-Sample data:
+##### Sample data:
   <img src="./images/sample.png" width="766" height="600">
 
 ### How to use GUI:
