@@ -58,13 +58,12 @@ The model was trained using ResNet50 for classification.
   ```
 - You can try widgets in the GUI with ease.
 
- <img align="left" src="./images/gui2.png" width="400" height="450"><img align="right" src="./images/gui3.png" width="400" height="450">
-
+<img align="left" src="./images/gui2.png" width="400" height="450"><img align="left" src="./images/gui3.png" width="400" height="450">____________________
 
 ### Custom GUI 
  If you want to deploy any classification models through this simple GUI, change the load_model path in mk1.py at line 8 and resize image in get_image function.
  
- ### Requirements:
+### Requirements:
  - tf-nightly
  - PyQt5
  - Pillow
